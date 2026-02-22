@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, FileText, ChevronDown, Code2, Globe, Database } from "lucide-react";
+import { Github, Code2, ChevronDown, Database, Globe, FileText } from "lucide-react";
 import profileImg from "@/assets/profile-placeholder.png";
 
 const HeroSection = () => {
@@ -13,17 +13,18 @@ const HeroSection = () => {
           transition={{ duration: 0.7 }}
           className="flex flex-col gap-6"
         >
-          <p className="text-primary font-mono text-sm tracking-wider">Hello, I'm</p>
+          <span className="inline-block px-4 py-1.5 rounded-full border border-primary/40 text-primary text-sm font-mono tracking-wider w-fit">
+            Open to Opportunities
+          </span>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Akshya Shree{" "}
             <span className="text-gradient">M</span>
           </h1>
-          <div className="flex flex-col gap-1">
-            <p className="text-muted-foreground text-lg">Computer Science Engineering Student</p>
-            <p className="text-primary font-semibold text-lg">Aspiring Software Developer</p>
-          </div>
+          <p className="text-primary font-semibold text-lg">
+            Aspiring Java Developer | DSA | Full Stack
+          </p>
           <p className="text-muted-foreground max-w-md leading-relaxed">
-            Passionate about building clean, user-friendly web applications with Java and modern web technologies. Ready to bring fresh ideas and dedication to your team.
+            Third-year Computer Science Engineering student with a strong foundation in Java and Data Structures. Actively practicing DSA on LeetCode and building web applications using HTML, CSS, JavaScript, and React.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-2">
@@ -66,7 +67,6 @@ const HeroSection = () => {
             </a>
           </div>
 
-          {/* Strength pills */}
           <div className="flex flex-wrap gap-3 mt-4">
             {[
               { icon: <Database size={16} />, label: "Java & DSA" },
@@ -107,7 +107,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll hint */}
       <a
         href="#about"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground animate-scroll-hint"
